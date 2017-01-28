@@ -1,0 +1,377 @@
+body {
+	color: white;
+	text-align: center;
+	background: #0F0F0F;
+	padding-top: 50px;
+}
+
+#window {
+	display: inline-block;
+	border: solid 1px #748193;
+	position: relative;
+	overflow: hidden;
+	width: 640px;
+	height: 480px;
+}
+
+#window_game {
+	width: 640px;
+	height: 480px;
+	background: black;
+	overflow: hidden;
+}
+
+#char_box {
+	position: relative;
+	width: 640px;
+	height: 250px;
+}
+
+#sans {
+	position: absolute;
+	bottom: 0;
+	left: 255px;
+}
+
+#sans.hover {
+	animation: sans_move 2s ease-in-out 0s backwards;
+}
+
+#dial_box_zone {
+	width: 640px;
+	height: 140px;
+}
+
+#dialogue_box {
+	display: inline-block;
+	width: 565px;
+	height: 130px;
+	border: solid 5px white;
+	margin-bottom: -4px;
+	font-family: dial_font;
+	font-size: 21px;
+	text-align: left;
+	line-height: 32px;
+	position: relative;
+	overflow: hidden;
+}
+
+#text_box {
+	padding: 15px 15px 0 15px;
+	letter-spacing: 1px;
+}
+
+#text_box p {
+	display: inline-block;
+	width: 220px;
+	padding-left: 45px;
+	margin: 0;
+}
+
+#text_box span {
+	text-indent: -32px;
+	margin-left: -30px;
+}
+
+#text_box img {
+	float: left;
+	padding-top: 11px;
+	padding-left: 12px;
+}
+
+#heart {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-image: url('img/fav_red.png');
+}
+
+#heart_cur.clignote {
+	animation: heart_clign 0.4s linear 0s backwards infinite;
+}
+
+.heart1 {
+	margin: 10px 0 0 11px;
+}
+
+.heart2 {
+	margin: 10px 0 0 276px;
+}
+.heart3 {
+	margin: 41px 0 0 11px;
+}
+.heart4 {
+	margin: 41px 0 0 276px;
+}
+
+#fight_life {
+	display: inline-block;
+	width: 100px;
+	height: 17px;
+	margin-left: -60px;
+	background: #00FF00;
+}
+
+#player_info {
+	display: inline-block;
+	width: 577px;
+	height: 40px;
+	text-align: left;
+	font-family: player_info_font;
+	margin-left: -5px;
+}
+
+#player_info p {
+	display: inline-block;
+	margin: 10px 30px 0 0;
+	font-size: 24px;
+}
+
+#player_info span {
+	display: inline-block;
+	margin: 0 8px 0 10px;
+	font-size: 18px;
+}
+
+#HP_left {
+	display: inline-block;
+	margin: 0 15px -3px 0;
+	height: 21px;
+	background: yellow;
+}
+
+#action_zone {
+	display: inline-block;
+	width: 577px;
+	height: 48px;
+	padding-top: 2px;
+}
+
+#action_buttons {
+	display: flex;
+    justify-content: space-between;
+}
+
+#action_buttons div  {
+	display: inline-block;
+	width: 110px;
+	height: 42px;
+}
+
+#selector1 {
+	background-image: url('img/button1.png');
+}
+
+#selector1.hover {
+	background-image: url('img/button1h.png');
+}
+
+#selector1.sel {
+	background-image: url('img/button1s.png');
+}
+
+#selector2 {
+	background-image: url('img/button2.png');
+}
+
+#selector2.hover {
+	background-image: url('img/button2h.png');
+}
+
+#selector2.sel {
+	background-image: url('img/button2s.png');
+}
+
+#selector3 {
+	background-image: url('img/button3.png');
+}
+
+#selector3.hover {
+	background-image: url('img/button3h.png');
+}
+
+#selector3.sel {
+	background-image: url('img/button3s.png');
+}
+
+#selector4 {
+	background-image: url('img/button4.png');
+}
+
+#selector4.hover {
+	background-image: url('img/button4h.png');
+}
+
+#selector4.sel {
+	background-image: url('img/button4s.png');
+}
+
+#fight_jauge {
+	float: left;
+	position: absolute;
+	width: 8px;
+	height: 122px;
+	top: 0;
+	left: 0;
+	background: white;
+	border: solid 3px black;
+}
+
+#fight_jauge.clignote {
+	animation: jauge_clign 1s ease-in-out 0s backwards;
+}
+
+#miss {
+	float: left;
+	position: absolute;
+	top: 45px;
+	left: 260px;
+	width: 118px;
+	height: 29px;
+	background: url('img/miss.png');
+	animation: miss_bump 1s ease-in-out 0s backwards;
+}
+
+#slice {
+	float: left;
+	position: absolute;
+	width: 55px;
+	height: 155px;
+	top: 90px;
+	left: 294px;
+	z-index: 99;
+	animation: slice 1.5s ease-in-out 0s backwards;
+}
+
+#bubble {
+	float: left;
+	position: absolute;
+	width: 187px;
+	height: 92px;
+	top: 100px;
+	left: 390px;
+	background: url('img/bubble.png');
+	font-family: comicsans_font;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-align: left;
+	line-height: 20px;
+	color: black;
+	padding: 10px 10px 0 38px;
+}
+
+#bone {
+	float: left;
+	position: absolute;
+	width: 13px;
+	height: 70px;
+	bottom: 30px;
+	left: 170px;
+	background: url('img/bone.png');
+}
+
+.disclaimer, .disclaimer a {
+	color: gray;
+	font-size: 15px;
+	font-family: player_info_font;
+}
+
+
+@font-face {
+	font-family: 'dial_font';
+	src: url('fonts/8bitoperator.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'player_info_font';
+	src: url('fonts/MarsNeedsCunnilingus.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'comicsans_font';
+	src: url('fonts/comicsans.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ut_papyrus';
+	src: url('fonts/papyrus.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@keyframes miss_bump {
+	25% { top: 35px; }
+	45% { top: 48px; }
+    50% { top: 45px; }
+}
+
+@keyframes sans_move {
+	0% { left : 255px; }
+	15% { left: 150px; }
+	65% { left: 150px; }
+    90% { left: 255px; }
+}
+
+@keyframes slice {
+	0% { background: ; }
+	10% { background: url('img/slice1.png'); }
+	20% { background: url('img/slice2.png'); }
+	30% { background: url('img/slice3.png'); }
+    35% { background: url('img/slice4.png'); }
+	40% { background: url('img/slice5.png'); }
+	50% { background: url('img/slice6.png'); }
+    60% { background: url('img/slice7.png'); }
+}
+
+@keyframes jauge_clign {
+	0% { background: black; border-color: white; }
+	10% { background: white; border-color: black; }
+	20% { background: black; border-color: white; }
+	30% { background: white; border-color: black; }
+	40% { background: black; border-color: white; }
+	50% { background: white; border-color: black; }
+	60% { background: black; border-color: white; }
+	70% { background: white; border-color: black; }
+	80% { background: black; border-color: white; }
+	90% { background: white; border-color: black; }
+	100% { background: black; border-color: white; }
+}
+@keyframes heart_clign {
+	0% { opacity: 1; }
+	1% { opacity: 0; }
+	25% { opacity: 0; }
+	26% { opacity: 1; }
+	50% { opacity: 1; }
+	51% { opacity: 0; }
+	75% { opacity: 0; }
+	76% { opacity: 1; }
+	100% { opacity: 1; }
+}
+
+/*
+
+#heart_fight_start {
+	visibility: hidden;
+	float: left;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-image: url('img/fav_red.png');
+	z-index: 99;
+	animation: fight_start 1s ease-in-out 0s backwards;
+}
+
+@keyframes fight_start {
+    0% { visibility: visible; left: 312px; top: 232px;}
+	50% { left: 313px; top: 232px; }
+    100% { left: 41px; top: 474px; }
+}
+
+*/
