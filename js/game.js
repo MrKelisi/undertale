@@ -110,6 +110,7 @@ $(document).ready(function() {
 	
 	});
 	
+	
 	function heartMove() {
 				
 				var redo = false;
@@ -317,14 +318,16 @@ $(document).ready(function() {
 		setHP(HP);
 		
 		if(String.fromCharCode(e.which) == 'm' || String.fromCharCode(e.which) == 'M') {
-		if(musique) {
-			musique = false;
-			audioMusique.pause();
-		}
-		else {
-			musique = true;
-			audioMusique.play();
-		}
+			if(musique) {
+				musique = false;
+				audioMusique.pause();
+				document.getElementById("music_key").classList.add("red");
+			}
+			else {
+				musique = true;
+				audioMusique.play();
+				document.getElementById("music_key").classList.remove("red");
+			}
 		}
 		
 		if(inmenu) {

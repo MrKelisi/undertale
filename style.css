@@ -2,7 +2,36 @@ body {
 	color: white;
 	text-align: center;
 	background: #0F0F0F;
-	padding-top: 50px;
+	padding-top: 20px;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.key {
+	min-width: 24px;
+	height: 32px;
+	display: inline-block;
+	vertical-align: 0%;
+	padding: 2px 5px 0 5px;
+	border: solid 3px lightgray;
+	text-align: center;
+	font-size: 16px;
+	margin: 0 3px 10px 3px;
+}
+.info_keys {
+	display: inline-block;
+	font-family: dial_font; 
+	font-size: 14px; 
+	color: lightgray;
+	margin: 0 12px;
+}
+.red, .red .key {
+	color: red;
+	border-color: red;
 }
 
 #window {
@@ -12,6 +41,7 @@ body {
 	overflow: hidden;
 	width: 640px;
 	height: 480px;
+	cursor: not-allowed;
 }
 
 #window_game {
@@ -275,6 +305,9 @@ body {
 	font-size: 15px;
 	font-family: player_info_font;
 }
+.disclaimer a:hover {
+	color: yellow;
+}
 
 
 @font-face {
@@ -320,7 +353,7 @@ body {
 }
 
 @keyframes slice {
-	0% { background: ; }
+	0% { background: none; }
 	10% { background: url('img/slice1.png'); }
 	20% { background: url('img/slice2.png'); }
 	30% { background: url('img/slice3.png'); }

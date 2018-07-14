@@ -9,8 +9,8 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/game.js"></script>
 	</head>
- 
-	<body>
+		
+	<body onLoad="self.focus()">
 		
 		<div id="window">
 		
@@ -70,10 +70,25 @@
 			</div>
 			
 		</div>
-		
 		<br><br>
-		<span style="font-family: dial_font; font-size: 14px; color: lightgray;">PRESS [M] FOR MUSIC</span><br><br>
-		<span class="disclaimer">(c) <a href="http://undertale.com">Undertale</a> belongs to <a href="http://twitter.com/tobyfox">Toby Fox</a> .</span>
+		
+		<span class="disclaimer">
+			(c) <a href="http://undertale.com">Undertale</a> belongs to <a href="http://twitter.com/tobyfox">Toby Fox</a>.
+		</span>
+		<br><br>
+		
+		<span class="info_keys">
+			<div class="key">←</div><div class="key">↑</div><div class="key">↓</div><div class="key">→</div>: MOVING
+		</span>
+		<span class="info_keys">
+			<div class="key">Z</div>or<div class="key">ENTER</div>: CONFIRM 
+		</span>
+		<span class="info_keys">
+			<div class="key">SHIFT</div>: CANCEL
+		</span>
+		<span class="info_keys" id="music_key">
+			<div class="key">M</div>: MUSIC
+		</span>
 	
 	</body>
 </html>
